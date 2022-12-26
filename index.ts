@@ -1,5 +1,11 @@
 import express, { Request, Response } from "express";
 import fs from "fs";
+import readline from "readline";
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
 const app = express();
 const port = 3000;
@@ -47,6 +53,10 @@ endpoints.map((endpoint) => {
       }
       break;
   }
+});
+
+app.get("*", (req: Request, res: Response) => {
+  res.status(404).send("Error");
 });
 
 app.listen(port, () => {

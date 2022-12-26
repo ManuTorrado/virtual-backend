@@ -1,0 +1,4 @@
+responses:
+  -res1:
+    dir: "/prueba"
+    expected:
