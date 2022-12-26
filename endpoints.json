@@ -1,0 +1,14 @@
+{
+  "res1": {
+    "dir": "/prueba",
+    "type": "get"
+  },
+
+  "res2": {
+    "dir": "/pruebax",
+    "type": "get",
+    "expected": {
+      "saludos": 5
+    }
+  }
+}
